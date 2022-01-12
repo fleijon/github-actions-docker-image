@@ -32,7 +32,7 @@ jobs:
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
-          password: ${{ secrets.SECRET_KEY }}
+          password: ${{ secrets.PACKAGE_SECRET }}
 
       # Build and push container
       - name: Build and push
